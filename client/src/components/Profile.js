@@ -7,7 +7,6 @@ import convertToBase64 from '../helper/convert';
 import useFetch from '../hooks/fetch.hook';
 import { updateUser } from '../helper/helper';
 import { useNavigate } from 'react-router-dom';
-import { useAuthStore } from '../store/store';
 
 import styles from '../styles/Username.module.css';
 import extend from '../styles/Profile.module.css';
@@ -94,7 +93,7 @@ export default function Profile() {
               </div>
 
               <input {...formik.getFieldProps('address')} className={`${styles.textbox} ${extend.textbox}`} type="text" placeholder='Address' />
-              <button className={styles.btn} type='submit'>Register</button>
+              <button className={styles.btn} type='submit'>Update</button>
 
             </div>
 
